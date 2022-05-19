@@ -1,5 +1,13 @@
+body {
+  margin: unset;
+}
+
 main#main {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+}
+
+main > img {
+  max-height: 100vh;
 }
