@@ -1,13 +1,127 @@
 body {
   margin: unset;
-}
-
-main#main {
+  max-height: 100vh;
+  overscroll-behavior-x: none;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
 }
 
-main > img {
+main#main {
+  overscroll-behavior-x: none;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+main > * {
   max-height: 100vh;
+  height: 100vh;
+}
+
+nav#main-navigation-bar {
+  display: flex;
+  flex-direction: column-reverse;
+  border-right: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav#main-navigation-bar > ul {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-grow: 1;
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline: 0px;
+}
+
+nav#main-navigation-bar > ul > li {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+nav#main-navigation-bar > div#main-navigation-bar-asterisk {
+  flex-shrink: 0;
+  font-size: 10em;
+  text-align: center;
+}
+
+section#introduction {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+div#introduction-text {
+  display: flex;
+  flex-direction: column;
+  min-width: max-content;
+  margin-left: 5em;
+  margin-top: 5em;
+  margin-right: 8em;
+}
+
+div#introduction-text > p#detailed-introduction {
+  max-width: 260px;
+  line-height: 1.5em;
+  word-wrap: break-word;
+  white-space: pre-line;
+  flex: 6;
+}
+
+div#introduction-text > h2#summarized-introduction {
+  line-height: 100%;
+  text-align: right;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+div#introduction-text > div#spacing {
+  flex: 9;
+}
+
+div#phrases {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  overflow-x: unset;
+  max-height: 1024px;
+  margin-right: 10em;
+}
+
+div#phrases > h1.phrase-text {
+  font-size: 10em;
+  font-weight: 400;
+  margin-top: 0px;
+  line-height: 1.2em;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+
+div#phrases > h1#phrase-1 {
+  margin-left: -0.5em;
+}
+
+div#phrases > h1#phrase-2 {
+  margin-left: 0;
+}
+
+div#phrases > h1#phrase-3 {
+  margin-left: -1em;
+}
+
+section#prologue {
+  width: 1024px;
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid black;
 }
