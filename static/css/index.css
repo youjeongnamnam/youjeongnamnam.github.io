@@ -48,8 +48,15 @@ nav#main-navigation-bar > ul > li {
 
 nav#main-navigation-bar > div#main-navigation-bar-asterisk {
   flex-shrink: 0;
-  font-size: 10em;
   text-align: center;
+}
+
+nav#main-navigation-bar > div#main-navigation-bar-asterisk > img {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
 }
 
 section#introduction {
