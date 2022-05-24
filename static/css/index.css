@@ -127,8 +127,54 @@ div#phrases > h1#phrase-3 {
 }
 
 section#prologue {
-  width: 1024px;
   display: flex;
   flex-direction: row;
   border-left: 1px solid black;
+  
+}
+
+div#prologue-left-box {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+  width: 370px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+div#prologue-top-blank {
+  display: flex;
+  flex: 0.8;
+}
+div#prologue-middle-box {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+p#prologue-text {
+  word-break: keep-all;
+  line-height: 1.8em;
+}
+
+
+div#prologue-bottom-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div#prologue-bottom-box > img {
+  max-width: 240px;
+  max-height: 240px;
+}
+
+div#prologue-circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #3f3f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white
 }
