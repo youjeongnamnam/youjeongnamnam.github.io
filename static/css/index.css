@@ -186,6 +186,9 @@ div#prologue-right-box {
   display: flex;
   flex-direction: column;
   border-left: 0.5px solid gray;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  border-right: 0.5px solid gray;
 }
 
 div#prologue-right-box > * {
@@ -194,4 +197,9 @@ div#prologue-right-box > * {
   /* Required for text-overflow to do anything */
   white-space: nowrap;
   overflow: hidden;
+}
+
+section#profile {
+  width: 500px;
+  margin-right: 50px;
 }
