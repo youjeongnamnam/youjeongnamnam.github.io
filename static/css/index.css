@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  overflow-y: none;
 }
 
 main#main {
@@ -12,6 +13,7 @@ main#main {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  overflow-y: none;
 }
 
 main > * {
@@ -37,9 +39,12 @@ nav#main-navigation-bar > ul {
   padding-inline: 0px;
 }
 
-nav#main-navigation-bar > ul > li {
+.dir-left-to-letter-top {
   writing-mode: tb-rl;
   transform: rotate(-180deg);
+}
+
+nav#main-navigation-bar > ul > li {
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 40px;
@@ -130,7 +135,6 @@ section#prologue {
   display: flex;
   flex-direction: row;
   border-left: 1px solid black;
-  
 }
 
 div#prologue-left-box {
@@ -157,7 +161,6 @@ p#prologue-text {
   line-height: 1.8em;
 }
 
-
 div#prologue-bottom-box {
   display: flex;
   justify-content: flex-end;
@@ -176,5 +179,19 @@ div#prologue-circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white
+  color: white;
+}
+
+div#prologue-right-box {
+  display: flex;
+  flex-direction: column;
+  border-left: 0.5px solid gray;
+}
+
+div#prologue-right-box > * {
+  font-size: 10em;
+  text-overflow: clip;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
 }
