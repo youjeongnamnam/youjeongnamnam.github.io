@@ -202,4 +202,56 @@ div#prologue-right-box > * {
 section#profile {
   width: 500px;
   margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+#profile-pr {
+  min-width: 450px;
+  padding-left: 160px;
+  padding-right: 180px;
+  padding-top: 70px;
+}
+
+#profile-pr-text > .title {
+  font-size: 50px;
+}
+
+#profile-pr-text > .title > .title02{
+  font-weight: bold;
+}
+
+#profile-pr-image > img{
+  width: 200px;
+  padding-bottom: 40px;
+}
+
+#profile-pr-personal-info > p.my-name {
+  font-size: 26px;
+  line-height: 7px;
+}
+
+#profile-pr-personal-info > p.korean {
+  font-weight: 700;
+}
+
+#profile-pr-personal-info > .my-email{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+#profile-detail{
+  padding-top: 240px;
+}
+
+#profile-detail > p.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#profile-detail > p.subtitle::before {
+  content: '／';
+  font-style: italic;
+  margin-right: 10px;
 }
