@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  overflow-y: none;
+  overflow-y: unset;
 }
 
 main#main {
@@ -106,7 +106,7 @@ div#phrases {
   margin-top: 10%;
   margin-bottom: 10%;
   overflow-x: unset;
-  max-height: 1024px;
+  /* max-height: 1024px; */
   margin-right: 10em;
 }
 
@@ -182,32 +182,40 @@ div#prologue-circle {
   color: white;
 }
 
-div#prologue-right-box {
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+
+.big-text-box {
   display: flex;
   flex-direction: column;
   border-left: 0.5px solid gray;
   padding-left: 2.5em;
   padding-right: 2.5em;
   border-right: 0.5px solid gray;
-}
-
-div#prologue-right-box > * {
-  font-size: 10em;
-  text-overflow: clip;
-  /* Required for text-overflow to do anything */
   white-space: nowrap;
   overflow: hidden;
 }
 
+.big-text-box > * {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  font-size: 10em;
+}
+
 section#profile {
-  width: 500px;
   margin-right: 50px;
   display: flex;
   flex-direction: row;
 }
 
 #profile-pr {
-  min-width: 450px;
+  width: 300px;
   padding-left: 160px;
   padding-right: 180px;
   padding-top: 70px;
@@ -217,11 +225,11 @@ section#profile {
   font-size: 50px;
 }
 
-#profile-pr-text > .title > .title02{
+#profile-pr-text > .title > .title02 {
   font-weight: bold;
 }
 
-#profile-pr-image > img{
+#profile-pr-image > img {
   width: 200px;
   padding-bottom: 40px;
 }
@@ -235,23 +243,96 @@ section#profile {
   font-weight: 700;
 }
 
-#profile-pr-personal-info > .my-email{
+#profile-pr-personal-info > .my-email {
   font-size: 18px;
   font-weight: 300;
 }
 
-
-#profile-detail{
-  padding-top: 240px;
+#profile-detail {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px;
 }
 
-#profile-detail > p.subtitle {
+#profile-detail > * > * {
+  width: 450px;
+}
+
+#profile-detail .subtitle {
   font-size: 22px;
   font-weight: 700;
 }
 
-#profile-detail > p.subtitle::before {
-  content: '／';
+#profile-detail .subtitle::before {
+  content: "／";
   font-style: italic;
   margin-right: 10px;
+}
+
+#profile-detail-career-skill {
+  display: flex;
+  flex-direction: row;
+}
+
+#profile-detail-license-education-experience {
+  display: flex;
+  flex-direction: row;
+}
+
+#profile-detail-education-experience {
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-detail .profile-detail-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 26px;
+}
+
+#profile-detail div.profile-detail-row p {
+  font-size: 18px;
+  line-height: 36px;
+  margin: 0;
+}
+
+#profile-detail div.profile-detail-row > p.profile-detail-year,
+p.profile-detail-skillname {
+  font-weight: 300;
+  margin-right: 25px;
+  width: 100px;
+}
+
+section#contents {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+section#contents * {
+  color: white;
+}
+
+#content-left-box {
+  padding-left: 6em;
+  margin-right: 25px;
+}
+
+section#contents .portfolio-content > img.hover-image {
+  display: none;
+}
+
+section#contents .portfolio-content:hover > img.normal-image {
+  display: none;
+}
+
+section#contents .portfolio-content:hover > img.hover-image {
+  display: initial;
+}
+
+#content-right-box > * {
+  animation: marquee 30s linear infinite;
 }
