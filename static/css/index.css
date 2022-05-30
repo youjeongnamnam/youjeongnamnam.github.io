@@ -21,6 +21,16 @@ main > * {
   height: 100vh;
 }
 
+@keyframes spinning {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#main-navigation-bar-asterisk > img {
+  animation: spinning 10s linear infinite;
+}
+
 nav#main-navigation-bar {
   display: flex;
   flex-direction: column-reverse;
@@ -147,6 +157,7 @@ div#prologue-left-box {
 }
 
 div#prologue-top-blank {
+  height: 250px;
   display: flex;
   flex: 0.8;
 }
