@@ -14,7 +14,7 @@
   font-family: "MADE Bon Voyage";
   src: url("../fonts/MADE\ Bon\ Voyage\ Thin\ PERSONAL\ USE.otf")
     format("truetype");
-  font-weight: 200;
+  font-weight: 100;
 }
 
 @font-face {
@@ -31,13 +31,13 @@
 @font-face {
   font-family: "MuktaMahee";
   src: url("../fonts/MuktaMahee-Medium.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Thin.ttf") format("truetype");
-  font-weight: 200;
+  font-weight: 100;
 }
 
 @font-face {
@@ -49,42 +49,78 @@
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Medium.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @font-face {
   font-family: "HindSiliguri";
   src: url("../fonts/Hind_Siliguri/HindSiliguri-Light.ttf") format("truetype");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "HindSiliguri";
-  src: url("../fonts/Hind_Siliguri/HindSiliguri-Regular.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "HindSiliguri";
-  src: url("../fonts/Hind_Siliguri/HindSiliguri-Medium.ttf") format("truetype");
+  src: url("../fonts/Hind_Siliguri/HindSiliguri-Regular.ttf") format("truetype");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "HindSiliguri";
+  src: url("../fonts/Hind_Siliguri/HindSiliguri-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "HindSiliguri";
   src: url("../fonts/Hind_Siliguri/HindSiliguri-SemiBold.ttf")
     format("truetype");
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @font-face {
   font-family: "HindSiliguri";
   src: url("../fonts/Hind_Siliguri/HindSiliguri-Bold.ttf") format("truetype");
-  font-weight: 600;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansKR-Thin.otf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansKR-Light.otf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansKR-Regular.otf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansKR-Medium.otf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansKR-Bold.otf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansKR-Black.otf") format("truetype");
+  font-weight: 900;
 }
