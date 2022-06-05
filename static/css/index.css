@@ -332,15 +332,15 @@ section#contents * {
   margin-right: 25px;
 }
 
-section#contents .portfolio-content > img.hover-image {
+section#contents .portfolio-content img.hover-image {
   display: none;
 }
 
-section#contents .portfolio-content:hover > img.normal-image {
+section#contents .portfolio-content:hover img.normal-image {
   display: none;
 }
 
-section#contents .portfolio-content:hover > img.hover-image {
+section#contents .portfolio-content:hover img.hover-image {
   display: initial;
 }
 

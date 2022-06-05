@@ -1,0 +1,8 @@
+body {
+  margin: unset;
+}
+
+main#main > img.page-image {
+  width: 100%;
+  height: auto;
+}
