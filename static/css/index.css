@@ -7,6 +7,8 @@ body {
   overflow-x: scroll;
   overflow-y: unset;
   scroll-behavior: smooth;
+  background-repeat: repeat;
+  background-image: url("/static/images/index/backgroundimage.png");
 }
 
 a:link,
@@ -25,8 +27,6 @@ main#main {
   scroll-behavior: smooth;
   overflow-x: scroll;
   overflow-y: none;
-  background-repeat: repeat;
-  background-image: url("/static/images/index/backgroundimage.png");
 }
 
 main > * {
