@@ -336,7 +336,7 @@ p.profile-detail-skillname {
 section#contents {
   display: flex;
   flex-direction: row;
-  background-color: black;
+  background-color: rgb(25, 25, 25);
 }
 
 section#contents > div.contents-col {
@@ -400,6 +400,29 @@ section#contents p {
   color: white;
 }
 
+#content-right-box {
+  background-color: rgb(14, 14, 14);
+}
+
 #content-right-box > * {
   animation: marquee 30s linear infinite;
+}
+
+#content-right-box.small-text-box {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+
+#content-right-box.small-text-box > span {
+  color: rgb(79, 79, 79);
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
