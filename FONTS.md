@@ -4,7 +4,8 @@
 
 타이틀 위의 글자(내용많은거) -> Malgun Gothic (#6b6b6b)
 
-Prologue 밑에 내용 -> 굵기 light (#262626)
+Prologue 밑에 내용 -> notosnas (light)  (#262626)
+
 
 UX UI Website -> Manrope (light, #3f3f3f)
 
@@ -14,7 +15,7 @@ UX UI Website -> Manrope (light, #3f3f3f)
 <프로필부분> 
 career,skill,LICENSE등등 -> 한포인트만 내려주세요 Hind Siliguri (#595959)
 
-세부내용 -> 한포인트만 내려주세요 (#595959)
+세부내용 -> notosnas 한포인트만 내려주세요 (#595959)
 
 
 포트폴리오 내용부분의 제목 -> Poppins (medium) (#3f3f3f) 두포인트 작게해주세요.
