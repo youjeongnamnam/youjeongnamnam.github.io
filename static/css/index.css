@@ -24,6 +24,8 @@ main#main {
   scroll-behavior: smooth;
   overflow-x: scroll;
   overflow-y: none;
+  background-repeat: repeat;
+  background-image: url("/static/images/index/backgroundimage.png");
 }
 
 main > * {
@@ -61,7 +63,7 @@ nav#main-navigation-bar > ul {
 
 .dir-left-to-letter-top {
   writing-mode: tb-rl;
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
 
 nav#main-navigation-bar > ul > li {
@@ -208,19 +210,23 @@ div#prologue-circle {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(0, -100%);
+    transform: translate(0, 100%);
   }
 }
 
 .big-text-box {
   display: flex;
-  flex-direction: column;
-  border-left: 0.5px solid gray;
+  flex-direction: column-reverse;
   padding-left: 2.5em;
   padding-right: 2.5em;
-  border-right: 0.5px solid gray;
   white-space: nowrap;
   overflow: hidden;
+  transform: rotate(180deg);
+}
+
+.big-text-box-border {
+  border-left: 0.5px solid gray;
+  border-right: 0.5px solid gray;
 }
 
 .big-text-box > * {
@@ -333,13 +339,36 @@ section#contents {
   background-color: black;
 }
 
+section#contents > div.contents-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+section#contents > div.contents-col.contents-row2 > div:first-child {
+  align-self: flex-start;
+}
+
+section#contents > div.contents-col.contents-row2 > div:nth-child(2) {
+  align-self: flex-end;
+}
+
 section#contents * {
   color: white;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #content-left-box {
   padding-left: 6em;
   margin-right: 25px;
+}
+
+section#contents .portfolio-content img {
+  width: 450px;
+  height: auto;
 }
 
 section#contents .portfolio-content img.hover-image {
@@ -352,6 +381,23 @@ section#contents .portfolio-content:hover img.normal-image {
 
 section#contents .portfolio-content:hover img.hover-image {
   display: initial;
+}
+section#contents .portfolio-content h3 {
+  color: white;
+}
+
+section#contents .portfolio-content * {
+  color: rgb(58, 57, 57);
+}
+
+section#contents .portfolio-content > h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+section#contents p {
+  color: white;
 }
 
 #content-right-box > * {
