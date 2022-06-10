@@ -60,32 +60,31 @@
 
 @font-face {
   font-family: "HindSiliguri";
-  src: url("../fonts/Hind_Siliguri/HindSiliguri-Light.ttf") format("truetype");
+  src: url("../fonts/HindSiliguri-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "HindSiliguri";
-  src: url("../fonts/Hind_Siliguri/HindSiliguri-Regular.ttf") format("truetype");
+  src: url("../fonts/HindSiliguri-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "HindSiliguri";
-  src: url("../fonts/Hind_Siliguri/HindSiliguri-Medium.ttf") format("truetype");
+  src: url("../fonts/HindSiliguri-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "HindSiliguri";
-  src: url("../fonts/Hind_Siliguri/HindSiliguri-SemiBold.ttf")
-    format("truetype");
+  src: url("../fonts/HindSiliguri-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "HindSiliguri";
-  src: url("../fonts/Hind_Siliguri/HindSiliguri-Bold.ttf") format("truetype");
+  src: url("../fonts/HindSiliguri-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
